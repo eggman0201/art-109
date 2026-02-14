@@ -1,0 +1,102 @@
+/* CSS Resets */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font size preferences */
+html {
+    font-size: 100%;
+}
+
+
+/* General CSS */
+body{
+    background-color: #f7e8db;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+header {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    /* background-color: #e77132; */
+    /* text-align: center; */
+    border-bottom:#4f6b4c 2px solid;
+    background: #f29500;
+background: linear-gradient(90deg, rgba(242, 149, 0, 1) 0%, rgba(255, 92, 74, 1) 50%, rgba(237, 221, 83, 1) 100%);
+
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+nav{
+    position:absolute ;
+    /* position: fixed; */
+    right: 2rem;
+    top: 2rem;
+}
+
+nav a {
+text-decoration: none;
+color: black;
+display: inline-block;
+margin: 2rem;
+}
+
+main {
+   
+}
+
+.about-section h2, .portfolio-section h2, .contact-section h2 {
+ padding: 2rem 0; 
+ color: antiquewhite; 
+}
+
+.about-content, .portfolio-content, .contact-content {
+ max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;    
+}
+
+.portfolio-item {
+    margin-bottom: 8rem;
+    background-color: #faebd7;
+    padding: 4rem;
+    text-align: justify;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px #07171d80;
+    border: 2px #ff7707 solid
+}
+
+.portfolio-item h3 {
+    margin: 1rem 0;
+}
+
+.portfolio-item p{
+    font-size: 1rem;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 1rem;
+}
+
+.portfolio-section{
+    background-color: #2f4121;
+}
+
+.contact-section {
+    background-color: #f29500;
+}
+
+footer{
+        background: #f29500;
+background: linear-gradient(90deg, rgba(242, 149, 0, 1) 0%, rgba(255, 92, 74, 1) 50%, rgba(237, 221, 83, 1) 100%);
+padding: 1rem;
+}
