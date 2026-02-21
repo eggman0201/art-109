@@ -12,8 +12,27 @@ html {
 
 
 /* General CSS */
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+:root{
+--bg-color-1: #676843;
+--bg-color-2: #F1EBCC;
+--font-dark: #212400;
+--font-light:#F1EBCC;
+--accent-color-1: #FF9A1F;
+--accent-color-2: #95ac02;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
-    background-color: #f7e8db;
+    background-color:var(--bg-color-1);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -21,11 +40,12 @@ body{
 header {
     padding: 1.5rem;
     margin-bottom: 3rem;
+    color: var(--font-dark);
     /* background-color: #e77132; */
     /* text-align: center; */
-    border-bottom:#4f6b4c 2px solid;
-    background: #f29500;
-background: linear-gradient(90deg, rgba(242, 149, 0, 1) 0%, rgba(255, 92, 74, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    border-bottom:var(--accent-color-2) 2px solid;
+    background:var(--bg-color-2);
+/* background: linear-gradient(90deg, rgba(242, 149, 0, 1) 0%, rgba(255, 92, 74, 1) 50%, rgba(237, 221, 83, 1) 100%); */;
 
 }
 
@@ -42,18 +62,22 @@ nav{
 
 nav a {
 text-decoration: none;
-color: black;
+color: var(--font-dark);
 display: inline-block;
 margin: 2rem;
+transition: all .4s ease;
 }
 
-main {
-   
+nav a:hover{
+    color: var(--accent-color-2);
+    text-decoration: underline solid var(--accent-color-1)2px;
+    transform: scale(1.1);
 }
 
 .about-section h2, .portfolio-section h2, .contact-section h2 {
  padding: 2rem 0; 
- color: antiquewhite; 
+ color: var(--font-light);
+
 }
 
 .about-content, .portfolio-content, .contact-content {
@@ -64,12 +88,12 @@ main {
 
 .portfolio-item {
     margin-bottom: 8rem;
-    background-color: #faebd7;
+    background-color: var(--bg-color-2);
     padding: 4rem;
     text-align: justify;
     border-radius: 1rem;
     box-shadow: 10px 10px 5px #07171d80;
-    border: 2px #ff7707 solid
+    border: 2px var(--accent-color-) solid
 }
 
 .portfolio-item h3 {
@@ -88,15 +112,16 @@ main {
 }
 
 .portfolio-section{
-    background-color: #2f4121;
+    background-color: var(--bg-color-1);
 }
 
 .contact-section {
-    background-color: #f29500;
+    background-color:var(--bg-color-1);
 }
 
 footer{
-        background: #f29500;
-background: linear-gradient(90deg, rgba(242, 149, 0, 1) 0%, rgba(255, 92, 74, 1) 50%, rgba(237, 221, 83, 1) 100%);
-padding: 1rem;
+        background: var(--bg-color-2);
+/* background: linear-gradient(90deg, rgba(242, 149, 0, 1) 0%, rgba(255, 92, 74, 1) 50%, rgba(237, 221, 83, 1) 100%);
+padding: 1rem; */
 }
+
