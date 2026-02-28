@@ -33,17 +33,25 @@ html{
 
 body{
     background-color:var(--bg-color-1);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1.25rem;
     line-height: 1.5;
+    text-align: justify;
 }
+
+@media (max-width: 750px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
 header {
     padding: 1.5rem;
     margin-bottom: 3rem;
     color: var(--font-dark);
     /* background-color: #e77132; */
     /* text-align: center; */
-    border-bottom:var(--accent-color-2) 2px solid;
+    border-bottom:var(--accent-color-1) 2px solid;
     background:var(--bg-color-2);
 /* background: linear-gradient(90deg, rgba(242, 149, 0, 1) 0%, rgba(255, 92, 74, 1) 50%, rgba(237, 221, 83, 1) 100%); */;
 
@@ -51,10 +59,23 @@ header {
 
 header h1 {
     font-size: 4rem;
+    font-family: "Berkshire Swash", serif;
+}
+
+@media (max-width: 750px) {
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 2rem;
+    }
 }
 
 nav{
-    position:absolute ;
+    position:absolute;
     /* position: fixed; */
     right: 2rem;
     top: 2rem;
@@ -77,13 +98,27 @@ nav a:hover{
 .about-section h2, .portfolio-section h2, .contact-section h2 {
  padding: 2rem 0; 
  color: var(--font-light);
+ font-family: "Berkshire Swash", serif;
+}
 
+main {
+    margin: 0;
+}
+
+@media (max-width: 450px) {
+    main {
+        margin: .15rem
+    }
 }
 
 .about-content, .portfolio-content, .contact-content {
  max-width: 60rem;
     margin: 0 auto;
     padding: 2rem;    
+}
+
+.about-content {
+    color: var(--font-light);
 }
 
 .portfolio-item {
@@ -93,11 +128,26 @@ nav a:hover{
     text-align: justify;
     border-radius: 1rem;
     box-shadow: 10px 10px 5px #07171d80;
-    border: 2px var(--accent-color-) solid
+    border: 2px var(--accent-color-1) solid;
+    color: var(--font-dark);
+}
+
+@media (max-width: 850px) {
+    .portfolio-item {
+        padding: 3rem
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-item {
+        padding:2rem
+    }
 }
 
 .portfolio-item h3 {
     margin: 1rem 0;
+    font-family: "Berkshire Swash", serif;
+    color: var(--font-dark);
 }
 
 .portfolio-item p{
@@ -116,12 +166,23 @@ nav a:hover{
 }
 
 .contact-section {
-    background-color:var(--bg-color-1);
+    background-color:var(--font-dark);
+    color: var(--font-light);
 }
 
 footer{
         background: var(--bg-color-2);
+        color: var(--font-dark);
 /* background: linear-gradient(90deg, rgba(242, 149, 0, 1) 0%, rgba(255, 92, 74, 1) 50%, rgba(237, 221, 83, 1) 100%);
 padding: 1rem; */
 }
 
+
+
+/* style classes */
+
+.berkshire-swash-regular {
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+}
