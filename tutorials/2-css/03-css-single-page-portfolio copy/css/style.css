@@ -1,0 +1,118 @@
+/* CSS Resets */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* respect user font size preferences */
+
+html {
+    font-size: 100%;
+}
+
+/* make images responsive */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+:root{
+--bg-color-1: #ea823c;
+--bg-color-2: #fff6f0;
+--font-dark: #12001d;
+--font-light:#fff9f0;
+--accent-color-2: #b6073b;
+--accent-color-3: #ffdd45;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+/* General CSS */
+
+body {
+background-color: var(--bg-color-1);
+color: var(--font-dark);
+font-size: 1.3rem;
+line-height: 2rem;
+font-family:"Nunito", sans-serif;
+}
+
+header {
+    padding: 3rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: -3px 3px 0px var(--accent-color-2), -6px 6px 0px var(--accent-color-3);
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 800;
+    text-shadow: -1px 1px 0px var(--accent-color-2), -2px 2px 0px var(--accent-color-3);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font-dark);
+    margin: 0 1rem;
+    font-weight:300;
+}
+
+nav a:hover {
+    color: var(--font-light);
+    text-decoration:underline var(--accent-color-2) 2px;
+}
+
+.about-content, .portfolio-content, .contact-content {
+    max-width: 60rem;
+    margin: 6rem auto;
+}
+
+.portfolio-item {
+    padding: 1rem;
+    background-color: var(--bg-color-2);
+}
+
+.about-content h2, .portfolio-content h2, .contact-content h2 {
+margin: 2rem 0;
+}
+
+footer {
+    padding: 1rem 2rem;
+    background-color: var(--font-dark);
+    color: var(--font-light);
+}
+
+footer img {
+    display: inline;
+    max-width: 2.5rem;
+    margin: 0 .3rem;
+}
+
+/* ~~~~~~~~~~~~~~~~flex styling~~~~~~~~~~~~~~ */
+.flex-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.flex-container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex-item-grid {
+    flex: 1 1 50%;
+}
