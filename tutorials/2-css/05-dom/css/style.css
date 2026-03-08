@@ -1,0 +1,149 @@
+/*
+CSS RESETS
+*/
+
+
+/* Change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Respect user font settings */
+html {
+  font-size: 100%;
+}
+
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ~~~~~~~~~~~~COLOR VARIABLES~~~~~~~~~~~~~~ */
+
+:root {
+    --bg: #ffffff;
+    --button:#ebebeb;
+   --font: #000000;
+   --fonttwo:#000000;
+}
+
+body.dark {
+    --bg:#000000;
+    --button:#282828;
+    --font:#ff5295;
+    --fonttwo:#f6c146;
+    
+}
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~GENERAL CSS~~~~~~~~~~~~~~~~~~~~~ */
+
+body {
+    background-color: var(--bg);
+    color: var(--fonttwo);
+}
+
+body img {
+    height: 20rem;
+}
+
+
+header {
+    line-height: 6rem;
+    padding: 1rem;
+    max-width: 50rem;
+margin: 0rem auto;
+text-align: center;
+}
+
+#ChangeHeaderButton {
+    color: var(--font);
+    background-color: var(--button);
+    border-color: var(--font);
+}
+
+#ChangeThemeButton {
+    display: block;
+   margin: 0rem auto;
+}
+
+.hidden {
+    display:none;
+}
+
+#img1 {
+    position: absolute;
+    top: .5rem;
+    left: 3rem;
+}
+
+#img2 {
+    position: absolute;
+right: 3rem;
+bottom: .25rem;
+}
+
+#img3 {
+    position: absolute;
+    top: 10rem;
+    right: 20rem;
+}
+
+#img4 {
+    position: absolute;
+    top: 20rem;
+    left: 24rem;
+}
+
+#img5 {
+    position: absolute;
+    bottom: 0rem;
+    left: 6rem;
+}
+
+#img6 {
+    position: absolute;
+    bottom: -4rem;
+    left: -3rem;
+}
+
+#img7 {
+    position: absolute;
+    top: -2rem;
+    right: -6rem;
+}
+
+#img8 {
+    position: absolute;
+    bottom: 30rem;
+    left: 30rem;
+}
+
+#img9 {
+    position: absolute;
+    bottom: 2rem;
+    left: 35rem;
+}
+
+#img10 {
+    position: absolute;
+    left: 3rem;
+    bottom: -14rem;
+    height: 80rem;
+}
+
