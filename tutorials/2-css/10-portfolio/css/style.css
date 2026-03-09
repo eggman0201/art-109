@@ -1,10 +1,78 @@
+/* CSS Resets */
 
+*{
+    margin: 0;
+    padding: 0;
+}
 
+/* change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
+/* respect user font size preferences */
+
+html {
+    font-size: 100%;
+}
+
+/* make images responsive */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+:root{
+--bg-color1: #b0b0b0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+/* General CSS */
+
+html {
+    scroll-behavior: smooth;
+}
 
 .hamburger {
     display: none;
     background: none;
     border: none;
     font-size: 3rem;
+}
+
+body {
+    line-height: 1.5rem;
+    background-color: var(--bg-color1);
+}
+
+.portfolio-content, .contact-content, .about-content, .goblin-content {
+    max-width: 60rem;
+    margin: 0rem auto 6rem auto;
+}
+
+footer img{
+    width: 2.5rem;
+}
+
+
+
+/* ~~~~~~~~~~~flexingittt ohhh im flexing it iohhhn img gleixng it~~~~~~~~~~~~~ */
+
+.flex-container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    /* align-items: stretch; */
+
+
+}
+
+.flex-item-grid {
+    flex: 0 1 15rem;
 }
