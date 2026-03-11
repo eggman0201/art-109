@@ -18,6 +18,19 @@ html {
     font-size: 100%;
 }
 
+.nav-menu {
+    max-width: 90rem;
+    margin: 0 auto;  
+}
+
+nav a {
+text-decoration: none;
+}
+
+ul.nav-menu{
+    list-style-type: none;
+}
+
 /* make images responsive */
 img {
     display: block;
@@ -28,6 +41,8 @@ img {
 
 :root{
 --bg-color1: #b0b0b0;
+--bg-color2: #222222;
+--accent-color1: #ff6f00;
 }
 
 /*~~~~~~~~~~~~~~~~~~~ color palette */
@@ -50,9 +65,38 @@ body {
     background-color: var(--bg-color1);
 }
 
+.nav-brand img {
+    width:100%;
+    height: 40rem;
+}
+
+.nav-menu {
+    max-width: 80rem;
+    padding: 1.25rem;
+    margin-bottom: 4rem;
+    font-size: 1.25rem;
+}
+
 .portfolio-content, .contact-content, .about-content, .goblin-content {
-    max-width: 60rem;
-    margin: 0rem auto 6rem auto;
+    max-width: 90rem;
+    margin: 0rem auto 12rem auto;
+}
+
+.portfolio-content h2, .contact-content h2, .about-content h2, .goblin-content h2 {
+    margin-bottom:3rem;
+    font-size: 2.5rem;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.portfolio-item{
+    transition:ease-in-out.2s;
+}
+
+.portfolio-item:hover {
+transform: scale(102%);
 }
 
 footer img{
@@ -63,10 +107,15 @@ footer img{
 
 /* ~~~~~~~~~~~flexingittt ohhh im flexing it iohhhn img gleixng it~~~~~~~~~~~~~ */
 
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
 .flex-container-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: .25rem;
     justify-content: center;
     /* align-items: stretch; */
 
@@ -74,5 +123,5 @@ footer img{
 }
 
 .flex-item-grid {
-    flex: 0 1 15rem;
+    flex: 0 1 28rem;
 }
