@@ -80,7 +80,7 @@ body {
     line-height: 1.5rem;
     background-color: var(--bg-color1);
     color: var(--font-color1);
-    font-family: "cutesy-normal";
+    font-family: "cutesy-normal", "Nunito", sans-serif;
     background: #130d1d;
     background: linear-gradient(0deg, #87035f 0%, #130d1d 1%, rgba(19, 13, 29, 1) 88%, rgba(135, 3, 95, 1) 94%, rgba(191, 0, 86, 1) 99%);
 }
@@ -141,7 +141,28 @@ body {
     padding: 1.25rem;
     margin-bottom: 4rem;
     font-size: 2rem;
+    font-family: "Dynapuff", system-ui, sans-serif;
+}
+
+.nav-menu a {
     color: var(--font-color1);
+    transition: .3s ease-in-out;
+}
+
+.nav-menu a:hover{
+    color: var(--font-color2);
+    text-decoration: underline solid 4px var(--accent-color1);
+    font-size: 110%;
+}
+
+.blurb-content {
+    text-align: center;
+    max-width: 70rem;
+    margin: 0 auto 15rem auto;
+    margin-top: 10rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    opacity: 70%;
 }
 
 .portfolio-content,
@@ -159,6 +180,7 @@ body {
     margin-bottom: 3rem;
     font-size: 3rem;
     line-height: 3rem;
+    font-family: "DynaPuff", system-ui, sans-serif;
 }
 
 
@@ -187,6 +209,7 @@ body {
     opacity: 0;
     transition: .2s ease-in-out;
     background-color: var(--accent-color1);
+    pointer-events: none;
 
 }
 
@@ -202,10 +225,44 @@ body {
     opacity: 85%;
 }
 
-footer img {
-    width: 2.5rem;
+.hidden-text {
+color: var(--font-color1);
+  font-size: 4rem;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  display: inline;
+  line-height: 3rem;
 }
 
+.about-content {
+    max-width: 70rem;
+    margin: 0 auto 10rem auto;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+/* remove later i just dont have time to make the gobling corner rn */
+.goblin-content{
+    display: none;
+}
+
+footer {
+    margin: 0 .75rem;
+}
+
+footer img {
+    display: inline;
+    max-width: 1.5rem;
+    margin: 0 .3rem;
+}
+
+@media (max-width:450px){
+ footer img {
+    max-width: 2rem;
+    margin: .1rem;
+ }   
+}
 
 
 /* ~~~~~~~~~~~flexingittt ohhh im flexing it iohhhn img gleixng it~~~~~~~~~~~~~ */
@@ -227,4 +284,10 @@ footer img {
 
 .flex-item-grid {
     flex: 0 1 28rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 }
