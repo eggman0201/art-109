@@ -63,6 +63,7 @@ html {
     background: none;
     border: none;
     font-size: 3rem;
+    color: var(--font-color1);
 }
 
 body {
@@ -125,6 +126,13 @@ ul.nav-menu {
         display: block;
     }
 
+    .portfolio-content h2,
+    .contact-content h2,
+    .about-content h2,
+    .goblin-content h2 {
+        margin-bottom: 0;
+    }
+
 }
 
 @media (max-width:500px) {
@@ -151,7 +159,7 @@ ul.nav-menu {
     transition: .3s ease-in-out;
 }
 
-.nav-menu a:hover{
+.nav-menu a:hover {
     color: var(--font-color2);
     text-decoration: underline solid 4px var(--accent-color1);
     font-size: 110%;
@@ -165,6 +173,13 @@ ul.nav-menu {
     font-size: 2rem;
     line-height: 2.5rem;
     opacity: 70%;
+}
+
+@media (max-width:850px) {
+    .blurb-content {
+        margin:1rem;
+        margin-bottom: 5rem;
+    }
 }
 
 .portfolio-content,
@@ -228,13 +243,13 @@ ul.nav-menu {
 }
 
 .hidden-text {
-color: var(--font-color1);
-  font-size: 4rem;
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  display: inline;
-  line-height: 3rem;
+    color: var(--font-color1);
+    font-size: 4rem;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    display: inline;
+    line-height: 3rem;
 }
 
 .about-content {
@@ -250,13 +265,17 @@ color: var(--font-color1);
 }
 
 /* remove later i just dont have time to make the gobling corner rn */
-.goblin-content{
+.goblin-content {
     display: none;
 }
 
 .contact-content {
     max-width: 70rem;
     font-size: 1.5rem;
+}
+
+.contact-content p {
+    opacity: 70%;
 }
 
 footer {
@@ -269,11 +288,11 @@ footer img {
     margin: 0 .3rem;
 }
 
-@media (max-width:450px){
- footer img {
-    max-width: 2rem;
-    margin: .1rem;
- }   
+@media (max-width:450px) {
+    footer img {
+        max-width: 2rem;
+        margin: .1rem;
+    }
 }
 
 /* ~~~~~~~~~~~flexingittt ohhh im flexing it iohhhn img gleixng it~~~~~~~~~~~~~ */
@@ -299,6 +318,6 @@ footer img {
 
 .flex-container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
