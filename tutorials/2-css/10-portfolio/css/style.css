@@ -48,7 +48,11 @@ img {
 @font-face {
     font-family: "cutesy-normal";
     src: url(../fonts/Peperritos-Regular.ttf) format('truetype');
+<<<<<<< Updated upstream
     src: url(../fonts/Peperritos-Regular.otf) format('opentype');
+=======
+    src: url(../fonts/Peperritos-Regular.otf) format('opentype')
+>>>>>>> Stashed changes
 }
 
 /*~~~~~~~~~~~~~~~~~~~ color palette */
@@ -127,7 +131,11 @@ body {
 
 @media (max-width:500px) {
     .portfolio-content img {
+<<<<<<< Updated upstream
         padding: .75rem;
+=======
+        padding: .75rem
+>>>>>>> Stashed changes
     }
 
     .portfolio-content h2 {
