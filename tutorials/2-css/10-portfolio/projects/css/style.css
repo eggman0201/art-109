@@ -139,11 +139,19 @@ nav a {
 .project-content p {
     font-size: 1.5rem;
     line-height: 2.25rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
+    margin-top: 1rem;
     opacity: 70%;
 }
 
+.project-content h3 {
+    font-size: 3rem;
+    font-family: "Dynapuff", system-ui, sans-serif;;
+}
 
+.project-photo {
+    min-width: 70rem;
+}
 
 footer {
     margin: 2rem .75rem 0rem;
