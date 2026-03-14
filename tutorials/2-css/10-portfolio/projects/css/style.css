@@ -155,11 +155,24 @@ nav a {
 
 .project-content h3 {
     font-size: 3rem;
-    font-family: "Dynapuff", system-ui, sans-serif;;
+    font-family: "Dynapuff", system-ui, sans-serif;
 }
 
 .project-photo {
     min-width: 70rem;
+}
+
+.button {
+    background-color: var(--bg-color2);
+    border-radius: 2rem;
+    
+}
+
+.button a {
+    text-decoration: none;
+    color: var(--bg-color1);
+    font-family: "Dynapuff", system-ui, sans-serif;
+    font-size: 2rem;
 }
 
 footer {
