@@ -52,7 +52,7 @@ img {
 
 /*~~~~~~~~~~~~~~~~~~~ color palette */
 
-/* General CSS */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ General CSS~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 html {
     scroll-behavior: smooth;
@@ -177,7 +177,7 @@ ul.nav-menu {
 
 @media (max-width:850px) {
     .blurb-content {
-        margin:1rem;
+        margin: 1rem;
         margin-bottom: 5rem;
     }
 }
@@ -264,9 +264,30 @@ ul.nav-menu {
     opacity: 70%;
 }
 
-/* remove later i just dont have time to make the gobling corner rn */
+.goblin-content a {
+    background-color: var(--bg-color2);
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: var(--bg-color1);
+    font-family: "Dynapuff", system-ui, sans-serif;
+    font-size: 5rem;
+    transition: .3s ease-in-out;
+}
+
 .goblin-content {
-    display: none;
+    display:block;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.goblin-content a:hover{
+    background-color: var(--font-color2);
+}
+
+.goblin-content:hover {
+    transform: scale(110%);
 }
 
 .contact-content {
