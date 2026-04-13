@@ -1,3 +1,37 @@
+//slime tutorial
+// CREDITS: Patt Vira (youtube tutorial: https://www.youtube.com/watch?v=VyXxSNcgDtg&list=PL0beHPVMklwh3KNAibTZKkHjN4xILaWvE&index=4)(her code: https://editor.p5js.org/pattvira/sketches/rS3KsmJHB)
+
+let molds = []; let num = 4000; 
+let d;
+
+function setup() {
+  createCanvas(400, 400);
+  angleMode(DEGREES);
+  d=pixelDensity();
+  
+  for (let i=0; i<num; i++) {
+    molds[i] = new Mold();
+  }
+
+  
+}
+
+function draw() {
+  background(0,5);
+  loadPixels();
+  
+  for (let i=0; i<num; i++){
+  
+  molds[i].update();
+  molds[i].display();
+  }
+}
+
+
+
+
+// eyeball p5 tutorial
+
 let canvas;
 let xPos=0;
 let yPos=0;
@@ -46,3 +80,4 @@ function drawThing(_x,_y) {
     // fill( (random(200, 255)), (random(200, 255)), (random(200, 255)));
     // ellipse(mouseX, mouseY, 30, 30);
 }
+

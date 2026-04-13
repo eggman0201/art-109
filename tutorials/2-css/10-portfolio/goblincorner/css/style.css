@@ -1,0 +1,59 @@
+/* CSS Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* respect user font size preferences */
+
+html {
+    font-size: 100%;
+}
+
+
+
+/* make images responsive */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* adding custom fonts */
+@font-face {
+    font-family: "ornaments";
+    src: url(../fonts/PeperritoOrnaments-Regular.ttf) format('truetype');
+    src: url(../fonts/PeperritoOrnaments-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: "cutesy-normal";
+    src: url(../fonts/Peperritos-Regular.ttf) format('truetype');
+    src: url(../fonts/Peperritos-Regular.otf) format('opentype');
+}
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+:root {
+    --bg-color1: #130d1d;
+    --bg-color2: #fcf2ff;
+    --accent-color1: #f04e23;
+    --font-color1: #fcf2ff;
+    --font-color2: #ffc038;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ General CSS~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+html {
+    scroll-behavior: smooth;
+}
