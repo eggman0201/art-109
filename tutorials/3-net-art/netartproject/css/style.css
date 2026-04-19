@@ -1,0 +1,102 @@
+/* CSS Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* respect user font size preferences */
+
+html {
+    font-size: 100%;
+}
+
+
+
+/* make images responsive */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+:root {
+    --bg-color1: #cdcdcd;
+    --bg-color2: #3ec640;
+    --accent-color1: #119a15;
+    --font-color1: #000000;
+    --font-color2: #575757;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ General CSS~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.button {
+    background-color: var(--bg-color2);
+    font-family: "Nunito", sans-serif;
+    padding: .5rem .75rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--font-color1);
+    font-size: 1.25rem;
+    border-radius: 5rem;
+    margin-bottom: 1rem;
+    transition: .1s;
+}
+
+.button:hover {
+    background-color: var(--accent-color1);
+    transform: scale(95%);
+    color: var(--bg-color1);
+}
+
+div {
+    background-color: var(--bg-color1);
+    font-family: "Nunito", sans-serif;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40rem;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 4px rgb(0, 0, 0, .5);
+    border: solid .1rem var(--font-color2);
+    flex-direction: row;
+    flex-flow: column;
+}
+
+p {
+    margin: 2.5rem;
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.go-to-party {
+    display: none;
+}
+
+
+audio {
+    display: none;
+}
+
+#start {
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+}
