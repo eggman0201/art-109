@@ -40,11 +40,6 @@ img {
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ General CSS~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#big-guy {
-    height: 100%;
-    width: 100%;
-}
-
 .button {
     background-color: var(--bg-color2);
     font-family: "Nunito", sans-serif;
@@ -66,7 +61,6 @@ img {
     transform: scale(95%);
     color: var(--bg-color1);
 }
-
 
 div {
     background-color: var(--bg-color1);
