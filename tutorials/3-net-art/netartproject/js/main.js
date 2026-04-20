@@ -28,22 +28,13 @@ const wakeup_duplicate_2 = document.querySelector('#wakeup-duplicate-2');
 const wakeup_duplicate_3 = document.querySelector('#wakeup-duplicate-3');
 
 // select html audio
-const audio = document.querySelector ('audio');
+var audio = document.querySelector ('audio');
+
 
 // randomizing div position
 
 
 // button presses
-
-const screenRect = big_guy.getBoundingClientRect();
-const chaseRect = chase.getBoundingClientRect();
-
-chase.addEventListener('mouseover', () => {
-    const i = Math.floor(Math.random() * (screenRect - chaseRect.width)) + 1;
-    const j = Math.floor(Math.random() * (screenRect - chaseRect.height)) + 1;
-    chase.style.left = i + 'px';
-    chase.style.top = j + 'px';
-});
 
 start_button.addEventListener("click", ()=>{
     wakeup_1.classList.remove("go-to-party");

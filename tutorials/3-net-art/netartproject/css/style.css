@@ -84,6 +84,19 @@ div {
     flex-flow: column;
 }
 
+/* remove if i figure out how to randomize locations */
+
+.go-to-party {
+    position: absolute;
+}
+
+
+
+
+
+
+/* ok dont remove this stuff undernearth */
+
 p {
     margin: 2.5rem;
     text-align: center;
@@ -96,10 +109,75 @@ p {
     position: absolute;
 }
 
-.go-to-party {
-    display: none;
+
+#wakeup-1 {
+    left: 1rem;
+    top:1rem;
 }
 
+#wakeup-2 {
+    right: 1rem;
+    bottom: 1rem;
+}
+
+#wakeup-3 {
+    left: 10rem;
+    top: 5rem;
+}
+
+#missed-party {
+    top: 10%;
+    left: 50%;
+}
+
+#wakeup-4{
+    top: -2rem;
+    left: 40rem;
+}
+
+#wakeup-5 {
+    top: 9rem;
+    left:60rem;
+}
+
+#wakeup-6 {
+    top: 9rem;
+    left: 78rem;
+}
+
+#wakeup-7 {
+    top: -4rem;
+    right: -2rem;
+}
+
+#wakeup-8 {
+    bottom: 0rem;
+    left:-4.5rem;
+}
+
+#wakeup-9{
+    top: 11rem;
+    left: 90rem;
+}
+
+#wakeup-10 {
+    bottom: 0rem;
+    left:25rem;
+}
+
+#wakeup-11 {
+    top: -3rem;
+    left: -3rem;
+}
+
+#wakeup-12 {
+    top: 14rem;
+left: -4rem;
+}
+
+.go-to-party {
+    /* display: none; */
+}
 
 audio {
     display: none;
