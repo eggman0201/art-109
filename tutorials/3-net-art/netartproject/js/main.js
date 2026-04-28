@@ -32,7 +32,18 @@ var audio = document.querySelector ('audio');
 
 
 // randomizing div position
-
+ const stage = document.getElementById("#stage");
+  const box = document.getElementById("#wakeup-1");
+  function placeRandomly() {
+    const maxX = stage.clientWidth - box.offsetWidth;
+    const maxY = stage.clientHeight - box.offsetHeight;
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
+    box.style.left = x + "px";
+    box.style.top  = y + "px";
+  }
+  // Run once when the page loads
+  placeRandomly();
 
 // button presses
 
