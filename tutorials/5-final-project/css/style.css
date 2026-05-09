@@ -1,0 +1,94 @@
+/* CSS Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* respect user font size preferences */
+
+html {
+    font-size: 100%;
+}
+
+
+
+/* make images responsive */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+:root {
+    --font-color1: #3c5353;
+    --font-color2: #cdcdcd;
+    --font-color3: #61868d;
+    --bg-color1: #0f1616;
+    --bg-color2: #64968c;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ color palette */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ General CSS~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+main {
+    background-color: var(--bg-color2);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    font-size: 8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--font-color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    text-shadow: 5px 5px 5px rgb(15, 22, 22, .2);
+}
+
+#main {
+    padding: 3rem;
+}
+
+.button {
+    font-size: 2.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--font-color3);
+    background-color: var(--bg-color1);
+    padding: 1.25rem;
+    border: none;
+    border-radius: 2.2rem;
+    box-shadow: 5px 5px 5px rgb(15, 22, 22, .5);
+    transition: .3s;
+    transition: .3s;
+}
+
+.button:hover {
+    transform: scale(105%);
+}
+
+#file {
+    display: none;
+}
+
+.floaters {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--font-color2);
+    opacity: .75;
+}
