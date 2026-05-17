@@ -9,34 +9,52 @@
 </head>
 
 <body>
+    <div class="commentlmao">
+        tried using a fade in tut from this video (https://www.youtube.com/watch?v=ybhlTIlUbO4) but just got misery that didnt work isntead
+    </div>
+    <style>
+        .commentlmao {
+            display: none;
+        }
+        #eyeball {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            opacity: 0;
+        }
+
+        .ghost {
+
+            transition: 10s;
+            opacity: 1;
+        }
+    </style>
+    <script>
+        function fadeIn() {
+            document.getElementById("eyeball").className = "ghost";
+        }
+    </script>
+
     <main class="stage">
         <div class="visible">
             <div id="main">
                 EVERYTHING<br>IS<br>EPHEMERAL
             </div>
-            <div class="button">
-                    <input type="file" id="file" multiple="multiple" accept="image/png, image/jpg, image/jpeg">
-                    <label for="file">
-                        <span class="button">ADD TO THE PILE</span>
-                    </label>
+            <div class="input-div button">
+                <input type="file" id="file" multiple="multiple" accept="image/png, image/jpg, image/jpeg">
+                <label for="file">
+                    <span class="button">ADD TO THE PILE</span>
+                </label>
             </div>
-            <form class="saved-form">
-                <div class="header">
-                    <div class="saved-div"></div>
-                </div>
-            </form>
-        </div>
-        <div id="blurb1" class="hidden floaters">
-            THIS NO LONGER BELONGS TO YOU
-        </div>
-        <div id="blurb2" class="hidden floaters">
-            THIS IS NOT YOURS
-        </div>
-        <div id="blurb3" class="hidden floaters">
-            MORE
+            <div id="queued-form">
+                <div class="queued-div"></div>
+            </div>
+            <div id="eyeball"><img src="image/eyeball.png" onload="fadeIn()">
+            </div>
+            <script src="js/main.js"></script>
         </div>
     </main>
-    <script src="js/main.js"></script>
 </body>
+
 
 </html>

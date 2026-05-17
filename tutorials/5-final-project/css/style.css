@@ -33,7 +33,7 @@ img {
     --font-color2: #cdcdcd;
     --font-color3: #61868d;
     --bg-color1: #0f1616;
-    --bg-color2: #64968c;
+    --bg-color2: #7fa39c;
 }
 
 /*~~~~~~~~~~~~~~~~~~~ color palette */
@@ -42,10 +42,6 @@ img {
 
 main {
     background-color: var(--bg-color2);
-}
-
-.hidden {
-    display: none;
 }
 
 .visible {
@@ -66,9 +62,10 @@ main {
 }
 
 .button {
+    z-index: 1;
     font-size: 2.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--font-color3);
+    color: var(--font-color2);
     background-color: var(--bg-color1);
     padding: 1.25rem;
     border: none;
@@ -86,9 +83,24 @@ main {
     display: none;
 }
 
-.floaters {
-    font-size: 3rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--font-color2);
-    opacity: .75;
+#queued-form {
+    /* background-color: #0f1616;  */
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+#queued-form img {
+    padding: 0%;
+    margin: 0 auto;
+    max-width: 30vw;
+    max-height: 30vh;
+}
+
+#eyeball {
+    position: absolute;
+    color: var(--bg-color2);
+    width: 100vw;
+    height: 100vh;
 }
