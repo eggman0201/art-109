@@ -42,7 +42,7 @@ img {
 
 #stage {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -69,11 +69,11 @@ img {
     color: var(--bg-color1);
 }
 
-
 div {
     background-color: var(--bg-color1);
     font-family: "Nunito", sans-serif;
     padding: 1.5rem;
+    position: absolute;
     margin: 1.5rem;
     display: flex;
     align-items: center;
@@ -86,6 +86,13 @@ div {
     flex-flow: column;
 }
 
+#start {
+    position: relative;
+    display: flex;
+    margin: auto;
+    margin-top: 15%;
+}
+
 p {
     margin: 2.5rem;
     text-align: center;
@@ -94,28 +101,24 @@ p {
     margin-bottom: 2.5rem;
 }
 
-.duplicate {
-    position: absolute;
-}
-
 .go-to-party {
-    /* opacity: 0; */
-}
-
-audio {
-    display: none;
-}
-
-#start {
-    display: flex;
-    margin: auto;
-    margin-top: 10%;
+    opacity: 0;
+    z-index: -1;
 }
 
 #byebye {
     transition: .2s;
 }
 
-#byebye:hover{
+#byebye:hover {
     opacity: 0;
+}
+
+#missed-party{
+    background-color: var(--font-color1);
+    color: var(--bg-color1);
+}
+
+#missed-party p {
+    font-size: 3rem;
 }

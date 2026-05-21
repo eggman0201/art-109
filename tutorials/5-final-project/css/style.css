@@ -97,10 +97,3 @@ main {
     max-width: 30vw;
     max-height: 30vh;
 }
-
-#eyeball {
-    position: absolute;
-    color: var(--bg-color2);
-    width: 100vw;
-    height: 100vh;
-}

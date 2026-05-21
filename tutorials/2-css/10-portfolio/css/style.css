@@ -72,7 +72,7 @@ body {
     color: var(--font-color1);
     font-family: "cutesy-normal", "Nunito", sans-serif;
     background: #130d1d;
-    background: linear-gradient(0deg, #87035f 0%, #130d1d 1%, rgba(19, 13, 29, 1) 88%, rgba(135, 3, 95, 1) 94%, rgba(191, 0, 86, 1) 99%);
+    background: linear-gradient(0deg, #87035f 0%, #130d1d 1%, #130d1d 88%, #87035f 94%, #bf0056 99%);
 }
 
 .nav-brand img {

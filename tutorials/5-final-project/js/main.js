@@ -42,7 +42,3 @@ function placeRandomly() {
 box.addEventListener("upload", () => {
     placeRandomly()
 })
-
-function fadeIn() {
-document.getElementById("eyeball").className="ghost";
-}
